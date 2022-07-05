@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="h1div">
+        <h1>IQ GAME</h1>
+    </div>
+    <!-- <div id="root1"></div>
+    <div id="root2"></div> -->
+    <div id="container1">
+        <div>
+            <div class="box2" id="child1"></div>
+            <div class="box2" id="child2"></div>
+        </div>
+        <div>
+
+            <div class="box2" id="child3"></div>
+            <div class="box2" id="child4"></div>
+        </div>
+    </div>
+    <div id="container2">
+        <div>
+            <div class="box3" id="child5"></div>
+            <div class="box3" id="child6"></div>
+            <div class="box3" id="child7"></div>
+        </div>
+        <div>
+
+            <div class="box3" id="child8"></div>
+            <div class="box3" id="child9"></div>
+            <div class="box3" id="child10"></div>
+        </div>
+        <div>
+
+            <div class="box3" id="child11"></div>
+            <div class="box3" id="child12"></div>
+            <div class="box3" id="child13"></div>
+        </div>
+    </div> 
+
+    <div class="btnarea">    
+        <button id="btn1" type="button"
+        onclick="document.getElementById('container1').style.display = 'flex',document.getElementById('container2').style.display = 'none'; Rnd1(); ">2X2</button>
+
+        <button id="btn2" type="button"
+        onclick="document.getElementById('container2').style.display = 'flex',document.getElementById('container1').style.display = 'none'; Rnd2(); ">3X3</button>
+
+        <button id="run" type="button" onclick="Run_to_check1(); Run_to_check2()">CHECK IT</button>
+        <button id="reset" type="button" onclick="ResetElement()">RESET GAME</button>
+</div> 
+    <!-- <div class="btnarea">    
+            <button id="btn1" type="button"
+            onclick="changes1(); hide1()">2X2</button>
+
+            <button id="btn2" type="button"
+            onclick="changes2(); hide2()">3X3</button>
+
+            <button id="reset" type="button" onclick="ResetElement()">RESET GAME</button>
+    </div>  -->
+
+
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
